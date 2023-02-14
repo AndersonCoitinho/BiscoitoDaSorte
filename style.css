@@ -1,0 +1,169 @@
+:root {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+main {
+    background: #FFFFFF;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    width: min(42.8rem, 90%);
+    margin: 25rem;
+}
+
+
+/*screen1*/
+.screen1 {
+    margin: 4.8rem 6.4rem 6.4rem 6.4rem;
+    width: 30rem;
+    height: 31.2rem;
+}
+
+h1 {
+    font-family: 'Montserrat';
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #34355B;
+}
+
+p {
+    font-family: 'DM Sans';
+    font-size: 1.5rem;
+    line-height: 2.0rem;
+    text-align: center;
+    color: #34355B;
+}
+
+.screen1 button {
+    border: none;
+    background: #FFFFFF;
+    cursor: pointer;
+
+}
+
+.screen1 button:hover {
+    
+    animation: left 220ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes left {
+    0% {
+        transform: translateX(0px);
+        transform: translateY(5px);
+    }
+
+    25% {
+        transform: translateX(7px);
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateX(0px);
+        transform: translateY(-5px);
+    }
+
+    75% {
+        transform: translateX(-7px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/*screen2*/
+.screen2 {
+    background: #FFFFFF;
+    width: 428px;
+    height: 564px;
+    display: flex;
+}
+
+
+.result {
+    width: 30rem;
+    height: 46.8rem;
+    margin: auto;
+    text-align: center;
+}
+
+.luck {
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+    width: 29.3rem;
+    height: 10.7rem;
+
+    animation: phrase 2000ms;
+}
+
+.luck p {
+    font-family: 'Dancing Script';
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    text-align: center;
+    color: #000000;
+    animation: phraseP 2000ms;
+}
+
+@keyframes phrase {
+    0% {
+        transform: translateY(12.0rem);
+        width: 2rem;
+        height: 2rem;
+        margin-left: 16.0rem;
+        background-color: #9fa2a3;
+        border-radius: 5rem;
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes phraseP {
+    0% {
+        opacity: 0;
+    }
+    
+    40% {
+        opacity: 0;
+    }
+
+    65% {
+        opacity: 1;
+    }
+}
+
+.result button {
+    width: 17.4rem;
+    height: 5.2rem;
+    background: #FF9500;
+    border-radius: 4px;
+    border: none;
+
+    color: #FFFFFF;
+    font-family: 'DM Sans';
+    font-size: 1.5rem;
+}
+
+.result button:hover {
+    background: #d88e26;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
